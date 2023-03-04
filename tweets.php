@@ -35,7 +35,7 @@
         
         // Find all images
         foreach ($html->find('img') as $element) {
-            $element->src = "/publish/imgproxy.php?url=" . $element->src;
+            $element->src = "/imgproxy.php?url=" . $element->src;
         }
 
         foreach ($html->find($titleselector) as $element) {
@@ -109,8 +109,8 @@ echo $lines_string;
 */
         ?>
 
-
-<div class="m-2"><a href="/">Made by @SneakBug8</a></div>
+<div class="m-2"><a href="https://github.com/SneakBug8/twitter-viewer">What's this?</a></div>
+<div class="m-2"><a href="https://sneakbug8.com">Made by @SneakBug8</a></div>
     </div>
 </body>
 

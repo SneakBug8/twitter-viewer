@@ -22,7 +22,7 @@
 
         // Find all images
         foreach ($html->find('img') as $element) {
-            $element->src = "/publish/imgproxy.php?url=" . $element->src;
+            $element->src = "/imgproxy.php?url=" . $element->src;
         }
 
         foreach ($html->find($titleselector) as $element) {
